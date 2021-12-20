@@ -1,0 +1,3154 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-64 "http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#"
+     xml:base="http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-64="http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#characteristic_Of -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;characteristic_Of">
+        <rdfs:range rdf:resource="&untitled-ontology-64;Person"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Traits"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#current_Location -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;current_Location">
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Kingdom"/>
+        <rdfs:range rdf:resource="&untitled-ontology-64;StatesOfIndia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#describes -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;describes">
+        <rdfs:range rdf:resource="&untitled-ontology-64;Events"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Parvas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#flows_Through -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;flows_Through">
+        <rdfs:range rdf:resource="&untitled-ontology-64;Kingdom"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Rivers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#formation_Of -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;formation_Of">
+        <rdfs:range rdf:resource="&untitled-ontology-64;Shape"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Vyuha"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#given_Boon_By -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;given_Boon_By">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#given_Curse_By -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;given_Curse_By">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#has_Brother -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;has_Brother">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&untitled-ontology-64;Man"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-64;has_Sibling"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#has_Daughter -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;has_Daughter">
+        <rdfs:range rdf:resource="&untitled-ontology-64;Woman"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-64;is_Parent_Of"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&untitled-ontology-64;has_Parent"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#has_Disciple -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;has_Disciple"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#has_Father -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;has_Father">
+        <rdfs:range rdf:resource="&untitled-ontology-64;Man"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Person"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-64;has_Parent"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&untitled-ontology-64;is_Parent_Of"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#has_Friend -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;has_Friend">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#has_Guru -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;has_Guru">
+        <owl:inverseOf rdf:resource="&untitled-ontology-64;has_Disciple"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#has_Husband -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;has_Husband">
+        <rdfs:range rdf:resource="&untitled-ontology-64;Man"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Woman"/>
+        <owl:inverseOf rdf:resource="&untitled-ontology-64;has_Wife"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#has_Mother -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;has_Mother">
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Person"/>
+        <rdfs:range rdf:resource="&untitled-ontology-64;Woman"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-64;has_Parent"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&untitled-ontology-64;is_Parent_Of"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#has_Parent -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;has_Parent">
+        <owl:inverseOf rdf:resource="&untitled-ontology-64;is_Parent_Of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#has_Sibling -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;has_Sibling">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#has_Sister -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;has_Sister">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&untitled-ontology-64;Woman"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-64;has_Sibling"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#has_Son -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;has_Son">
+        <rdfs:range rdf:resource="&untitled-ontology-64;Man"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-64;is_Parent_Of"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="&untitled-ontology-64;has_Parent"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#has_Structure_For -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;has_Structure_For">
+        <rdfs:range rdf:resource="&untitled-ontology-64;Person"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Places"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#has_Wife -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;has_Wife">
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Man"/>
+        <rdfs:range rdf:resource="&untitled-ontology-64;Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#incarnation_Of -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;incarnation_Of">
+        <rdfs:range rdf:resource="&untitled-ontology-64;Deities"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#is_King_Of -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;is_King_Of">
+        <rdfs:range rdf:resource="&untitled-ontology-64;Kingdom"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#is_Parent_Of -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;is_Parent_Of">
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#is_Prince_Of -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;is_Prince_Of">
+        <rdfs:range rdf:resource="&untitled-ontology-64;Kingdom"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#is_Princess_Of -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;is_Princess_Of">
+        <rdfs:range rdf:resource="&untitled-ontology-64;Kingdom"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#is_Queen_Of -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;is_Queen_Of">
+        <rdfs:range rdf:resource="&untitled-ontology-64;Kingdom"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#killed -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;killed">
+        <owl:inverseOf rdf:resource="&untitled-ontology-64;slain_By"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#located_In -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;located_In">
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Places"/>
+        <rdfs:range rdf:resource="&untitled-ontology-64;StatesOfIndia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#main_Character_In -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;main_Character_In">
+        <rdfs:range rdf:resource="&untitled-ontology-64;Events"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#mainly_Involved -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;mainly_Involved">
+        <owl:inverseOf rdf:resource="&untitled-ontology-64;main_Character_In"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#ruled_By -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;ruled_By">
+        <owl:inverseOf rdf:resource="&untitled-ontology-64;is_King_Of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#slain_By -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-64;slain_By">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#booknumber -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;booknumber">
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Parvas"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#chapterNumber -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;chapterNumber">
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Chapters"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#dayOfDeathInWar -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;dayOfDeathInWar">
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Person"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#duration -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;duration">
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Events"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#nameDuringAgnyatavas -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;nameDuringAgnyatavas">
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#numberOfChildren -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;numberOfChildren">
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#numberOfSenasInWar -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;numberOfSenasInWar">
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Kuru_Dynasty"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#numberOfSurvivorsAfterWar -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;numberOfSurvivorsAfterWar">
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Kuru_Dynasty"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#talksAbout -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-64;talksAbout">
+        <rdfs:domain rdf:resource="&untitled-ontology-64;Chapters"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Asura -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Asura">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;Deities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Bhagavad_Gita -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Bhagavad_Gita"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Chapters -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Chapters">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;Bhagavad_Gita"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Deities -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Deities"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Deva -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Deva">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;Deities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Events -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Events"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Kaurava -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Kaurava">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;Kuru_Dynasty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Kingdom -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Kingdom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Kuru_Dynasty -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Kuru_Dynasty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Man -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Man">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;Person"/>
+        <owl:disjointWith rdf:resource="&untitled-ontology-64;Woman"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Pandava -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Pandava">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;Kuru_Dynasty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Parvas -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Parvas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Person -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Places -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Places"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Rishi -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Rishi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Rivers -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Rivers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Shape -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Shape"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#StatesOfIndia -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;StatesOfIndia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Traits -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Traits"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Vyuha -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Vyuha"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Woman -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Woman">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-64;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#Yadava_Dynasty -->
+
+    <owl:Class rdf:about="&untitled-ontology-64;Yadava_Dynasty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#abhimanyu -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;abhimanyu">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">13</dayOfDeathInWar>
+        <has_Parent rdf:resource="&untitled-ontology-64;arjuna"/>
+        <has_Father rdf:resource="&untitled-ontology-64;arjuna"/>
+        <slain_By rdf:resource="&untitled-ontology-64;karna"/>
+        <has_Son rdf:resource="&untitled-ontology-64;parikshit"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;subhadra"/>
+        <has_Wife rdf:resource="&untitled-ontology-64;uttara"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#adhiratha -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;adhiratha">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <numberOfChildren rdf:datatype="&xsd;int">2</numberOfChildren>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#adhishesha -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;adhishesha">
+        <rdf:type rdf:resource="&untitled-ontology-64;Deva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#adi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;adi">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">1</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;birthofprinces"/>
+        <describes rdf:resource="&untitled-ontology-64;childhood"/>
+        <describes rdf:resource="&untitled-ontology-64;gurukulavaas"/>
+        <describes rdf:resource="&untitled-ontology-64;varnavatandexile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#agni -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;agni">
+        <rdf:type rdf:resource="&untitled-ontology-64;Deva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#agyatavas -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;agyatavas">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <duration rdf:datatype="&xsd;string">one year</duration>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;virata"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#aksarabrahma -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;aksarabrahma">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">8</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">devotion to the Supreme God</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#amba -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;amba">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <has_Sister rdf:resource="&untitled-ontology-64;ambalika"/>
+        <has_Sister rdf:resource="&untitled-ontology-64;ambika"/>
+        <given_Boon_By rdf:resource="&untitled-ontology-64;shiva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#ambalika -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;ambalika">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <has_Sister rdf:resource="&untitled-ontology-64;ambika"/>
+        <has_Husband rdf:resource="&untitled-ontology-64;vichitravirya"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#ambika -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;ambika">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <has_Husband rdf:resource="&untitled-ontology-64;vichitravirya"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#andhrapradesh -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;andhrapradesh">
+        <rdf:type rdf:resource="&untitled-ontology-64;StatesOfIndia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#anga -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;anga">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#anger -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;anger">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;durvasa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#anushasana -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;anushasana">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">13</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;instructionsfrombhishma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#archery -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;archery">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;arjuna"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;ekalavya"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;karna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#arjuna -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;arjuna">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;Pandava"/>
+        <numberOfChildren rdf:datatype="&xsd;int">4</numberOfChildren>
+        <nameDuringAgnyatavas rdf:datatype="&xsd;string">brihannala</nameDuringAgnyatavas>
+        <has_Son rdf:resource="&untitled-ontology-64;abhimanyu"/>
+        <is_Parent_Of rdf:resource="&untitled-ontology-64;abhimanyu"/>
+        <given_Boon_By rdf:resource="&untitled-ontology-64;agni"/>
+        <has_Son rdf:resource="&untitled-ontology-64;babruvahana"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;bhima"/>
+        <has_Wife rdf:resource="&untitled-ontology-64;chitrangadaa"/>
+        <has_Wife rdf:resource="&untitled-ontology-64;dhroupathi"/>
+        <has_Father rdf:resource="&untitled-ontology-64;indra"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;kunthi"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;nagula"/>
+        <has_Father rdf:resource="&untitled-ontology-64;pandu"/>
+        <has_Parent rdf:resource="&untitled-ontology-64;pandu"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;sagadeva"/>
+        <given_Boon_By rdf:resource="&untitled-ontology-64;shiva"/>
+        <has_Son rdf:resource="&untitled-ontology-64;srutakirti"/>
+        <has_Wife rdf:resource="&untitled-ontology-64;subhadra"/>
+        <given_Curse_By rdf:resource="&untitled-ontology-64;urvashi"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;youdhistira"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#arjunavisada -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;arjunavisada">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">1</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">distress of Arjuna</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#ashramavasika -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;ashramavasika">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">15</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;deathinforestfire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#ashvamedhaceremony -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;ashvamedhaceremony">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#ashvamedhika -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;ashvamedhika">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">14</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;ashvamedhaceremony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#ashwatthama -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;ashwatthama">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <main_Character_In rdf:resource="&untitled-ontology-64;deathofupapandavas"/>
+        <has_Father rdf:resource="&untitled-ontology-64;drona"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;kripi"/>
+        <given_Curse_By rdf:resource="&untitled-ontology-64;krishna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#ashwinikumaras -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;ashwinikumaras">
+        <rdf:type rdf:resource="&untitled-ontology-64;Deva"/>
+        <numberOfChildren rdf:datatype="&xsd;int">2</numberOfChildren>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#asura -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;asura">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;demon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#auroville -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;auroville">
+        <rdf:type rdf:resource="&untitled-ontology-64;Places"/>
+        <has_Structure_For rdf:resource="&untitled-ontology-64;dhroupathi"/>
+        <located_In rdf:resource="&untitled-ontology-64;tamilnadu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#babruvahana -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;babruvahana">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <has_Father rdf:resource="&untitled-ontology-64;arjuna"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;chitrangadaa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#bakasura -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;bakasura">
+        <rdf:type rdf:resource="&untitled-ontology-64;Asura"/>
+        <slain_By rdf:resource="&untitled-ontology-64;bhima"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#balarama -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;balarama">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;Yadava_Dynasty"/>
+        <incarnation_Of rdf:resource="&untitled-ontology-64;adhishesha"/>
+        <is_King_Of rdf:resource="&untitled-ontology-64;dwarka"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;krishna"/>
+        <has_Sister rdf:resource="&untitled-ontology-64;subhadra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#barbarika -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;barbarika">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <has_Father rdf:resource="&untitled-ontology-64;ghatotkacha"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#bhakti -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;bhakti">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">12</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">faith in God</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#bhanumati -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;bhanumati">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">2</numberOfChildren>
+        <has_Husband rdf:resource="&untitled-ontology-64;duryodhana"/>
+        <is_Princess_Of rdf:resource="&untitled-ontology-64;kasi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#bhima -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;bhima">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;Pandava"/>
+        <numberOfChildren rdf:datatype="&xsd;int">3</numberOfChildren>
+        <nameDuringAgnyatavas rdf:datatype="&xsd;string">ballava</nameDuringAgnyatavas>
+        <has_Wife rdf:resource="&untitled-ontology-64;dhroupathi"/>
+        <has_Guru rdf:resource="&untitled-ontology-64;drona"/>
+        <has_Son rdf:resource="&untitled-ontology-64;ghatotkacha"/>
+        <has_Wife rdf:resource="&untitled-ontology-64;hidumbi"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;kunthi"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;nagula"/>
+        <has_Parent rdf:resource="&untitled-ontology-64;pandu"/>
+        <has_Father rdf:resource="&untitled-ontology-64;pandu"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;sagadeva"/>
+        <has_Son rdf:resource="&untitled-ontology-64;sutasoma"/>
+        <has_Father rdf:resource="&untitled-ontology-64;vayu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#bhishma -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;bhishma">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">10</dayOfDeathInWar>
+        <slain_By rdf:resource="&untitled-ontology-64;arjuna"/>
+        <owl:sameAs rdf:resource="&untitled-ontology-64;devavrata"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;ganga"/>
+        <has_Father rdf:resource="&untitled-ontology-64;shantanu"/>
+        <given_Boon_By rdf:resource="&untitled-ontology-64;shantanu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#bhishmaparva -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;bhishmaparva">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">6</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;warunderbhishma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#bhoomadevi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;bhoomadevi">
+        <rdf:type rdf:resource="&untitled-ontology-64;Deva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#birthofprinces -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;birthofprinces">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;kunthi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#blindness -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;blindness">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;dhritarashtra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#bravery -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;bravery">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;abhimanyu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#cart -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;cart">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#celibacy -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;celibacy">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;bhishma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#chakra -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;chakra">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;wheel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#chandrakala -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;chandrakala">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;crescent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#charity -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;charity">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;karna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#chedi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;chedi">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+        <current_Location rdf:resource="&untitled-ontology-64;madhyapradesh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#childhood -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;childhood">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#chitrangada -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;chitrangada">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;satyavati"/>
+        <has_Father rdf:resource="&untitled-ontology-64;shantanu"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;vichitravirya"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#chitrangadaa -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;chitrangadaa">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <has_Son rdf:resource="&untitled-ontology-64;babruvahana"/>
+        <is_Princess_Of rdf:resource="&untitled-ontology-64;manipura"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#chittoor -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;chittoor">
+        <rdf:type rdf:resource="&untitled-ontology-64;Places"/>
+        <located_In rdf:resource="&untitled-ontology-64;andhrapradesh"/>
+        <has_Structure_For rdf:resource="&untitled-ontology-64;dhroupathi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#conspiracy -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;conspiracy">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;shakuni"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#cooking -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;cooking">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;bhima"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#crescent -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;crescent">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#crocodile -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;crocodile">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#crowning -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;crowning">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;youdhistira"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#daivasurasampadvibhaga -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;daivasurasampadvibhaga">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">16</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">traits of the divine and the evil</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#dance -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;dance">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;arjuna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#deathinforestfire -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;deathinforestfire">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;kunthi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#deathofupapandavas -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;deathofupapandavas">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#delhi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;delhi">
+        <rdf:type rdf:resource="&untitled-ontology-64;StatesOfIndia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#demon -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;demon">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#destructionofyadavas -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;destructionofyadavas">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;gandhari"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;krishna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#deva -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;deva">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;divine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#devaki -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;devaki">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">7</numberOfChildren>
+        <has_Son rdf:resource="&untitled-ontology-64;krishna"/>
+        <has_Husband rdf:resource="&untitled-ontology-64;vasudeva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#devavrata -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;devavrata">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#devika -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;devika">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <has_Husband rdf:resource="&untitled-ontology-64;youdhistira"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#devotion -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;devotion">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;gandhari"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#dhrishtadyumna -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;dhrishtadyumna">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">18</dayOfDeathInWar>
+        <slain_By rdf:resource="&untitled-ontology-64;ashwatthama"/>
+        <has_Father rdf:resource="&untitled-ontology-64;drupada"/>
+        <has_Sister rdf:resource="&untitled-ontology-64;panchali"/>
+        <has_Sister rdf:resource="&untitled-ontology-64;shikhandi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#dhritarashtra -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;dhritarashtra">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <numberOfChildren rdf:datatype="&xsd;int">102</numberOfChildren>
+        <has_Mother rdf:resource="&untitled-ontology-64;ambika"/>
+        <has_Son rdf:resource="&untitled-ontology-64;duryodhana"/>
+        <has_Daughter rdf:resource="&untitled-ontology-64;dushala"/>
+        <has_Son rdf:resource="&untitled-ontology-64;dushasana"/>
+        <has_Wife rdf:resource="&untitled-ontology-64;gandhari"/>
+        <is_King_Of rdf:resource="&untitled-ontology-64;hastinapur"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;pandu"/>
+        <has_Son rdf:resource="&untitled-ontology-64;vikarna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#dhroupathi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;dhroupathi">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">5</numberOfChildren>
+        <nameDuringAgnyatavas rdf:datatype="&xsd;string">sairandhri</nameDuringAgnyatavas>
+        <has_Husband rdf:resource="&untitled-ontology-64;arjuna"/>
+        <has_Husband rdf:resource="&untitled-ontology-64;bhima"/>
+        <is_Queen_Of rdf:resource="&untitled-ontology-64;indraprastha"/>
+        <has_Husband rdf:resource="&untitled-ontology-64;nagula"/>
+        <is_Princess_Of rdf:resource="&untitled-ontology-64;panchala"/>
+        <owl:sameAs rdf:resource="&untitled-ontology-64;panchali"/>
+        <has_Husband rdf:resource="&untitled-ontology-64;sagadeva"/>
+        <has_Husband rdf:resource="&untitled-ontology-64;youdhistira"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#dhyan -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;dhyan">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">6</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">self-restraint</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#diamond -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;diamond">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#dicegame -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;dicegame">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;dhroupathi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#divine -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;divine">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#drona -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;drona">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">15</dayOfDeathInWar>
+        <has_Disciple rdf:resource="&untitled-ontology-64;arjuna"/>
+        <has_Son rdf:resource="&untitled-ontology-64;ashwatthama"/>
+        <slain_By rdf:resource="&untitled-ontology-64;dhrishtadyumna"/>
+        <has_Friend rdf:resource="&untitled-ontology-64;drupada"/>
+        <has_Wife rdf:resource="&untitled-ontology-64;kripi"/>
+        <has_Guru rdf:resource="&untitled-ontology-64;parshuram"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#dronaparva -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;dronaparva">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">7</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;warunderdrona"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#drupada -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;drupada">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">15</dayOfDeathInWar>
+        <numberOfChildren rdf:datatype="&xsd;int">3</numberOfChildren>
+        <slain_By rdf:resource="&untitled-ontology-64;drona"/>
+        <is_King_Of rdf:resource="&untitled-ontology-64;panchala"/>
+        <has_Daughter rdf:resource="&untitled-ontology-64;shikhandi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#durvasa -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;durvasa">
+        <rdf:type rdf:resource="&untitled-ontology-64;Rishi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#duryodhana -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;duryodhana">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kaurava"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <numberOfSenasInWar rdf:datatype="&xsd;int">11</numberOfSenasInWar>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">18</dayOfDeathInWar>
+        <numberOfChildren rdf:datatype="&xsd;int">2</numberOfChildren>
+        <numberOfSurvivorsAfterWar rdf:datatype="&xsd;int">4</numberOfSurvivorsAfterWar>
+        <has_Friend rdf:resource="&untitled-ontology-64;ashwatthama"/>
+        <has_Guru rdf:resource="&untitled-ontology-64;balarama"/>
+        <slain_By rdf:resource="&untitled-ontology-64;bhima"/>
+        <has_Father rdf:resource="&untitled-ontology-64;dhritarashtra"/>
+        <has_Guru rdf:resource="&untitled-ontology-64;drona"/>
+        <has_Sister rdf:resource="&untitled-ontology-64;dushala"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;dushasana"/>
+        <is_Prince_Of rdf:resource="&untitled-ontology-64;hastinapur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#dushala -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;dushala">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <has_Father rdf:resource="&untitled-ontology-64;dhritarashtra"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;duryodhana"/>
+        <is_Princess_Of rdf:resource="&untitled-ontology-64;hastinapur"/>
+        <is_Queen_Of rdf:resource="&untitled-ontology-64;sindhu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#dushasana -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;dushasana">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kaurava"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">17</dayOfDeathInWar>
+        <slain_By rdf:resource="&untitled-ontology-64;bhima"/>
+        <has_Father rdf:resource="&untitled-ontology-64;dhritarashtra"/>
+        <has_Guru rdf:resource="&untitled-ontology-64;drona"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;vikarna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#dwarka -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;dwarka">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+        <current_Location rdf:resource="&untitled-ontology-64;gujarat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#eagle -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;eagle">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#ekalavya -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;ekalavya">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#exile -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;exile">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <duration rdf:datatype="&xsd;string">twelve years</duration>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;arjuna"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;bhima"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;nagula"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;panchali"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;sagadeva"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;youdhistira"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#exileofarjuna -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;exileofarjuna">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;arjuna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#finalascentofhimalayas -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;finalascentofhimalayas">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;youdhistira"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#galaxy -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;galaxy">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#gandhar -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;gandhar">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#gandhari -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;gandhari">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">101</numberOfChildren>
+        <has_Son rdf:resource="&untitled-ontology-64;duryodhana"/>
+        <has_Daughter rdf:resource="&untitled-ontology-64;dushala"/>
+        <has_Son rdf:resource="&untitled-ontology-64;dushasana"/>
+        <is_Princess_Of rdf:resource="&untitled-ontology-64;gandhar"/>
+        <is_Queen_Of rdf:resource="&untitled-ontology-64;hastinapur"/>
+        <given_Boon_By rdf:resource="&untitled-ontology-64;shiva"/>
+        <has_Son rdf:resource="&untitled-ontology-64;vikarna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#ganga -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;ganga">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">8</numberOfChildren>
+        <has_Son rdf:resource="&untitled-ontology-64;bhishma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#ganges -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;ganges">
+        <rdf:type rdf:resource="&untitled-ontology-64;Rivers"/>
+        <flows_Through rdf:resource="&untitled-ontology-64;hastinapur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#garland -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;garland">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#garud -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;garud">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;eagle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#ghatotkacha -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;ghatotkacha">
+        <rdf:type rdf:resource="&untitled-ontology-64;Asura"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">14</dayOfDeathInWar>
+        <has_Father rdf:resource="&untitled-ontology-64;bhima"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;hidumbi"/>
+        <slain_By rdf:resource="&untitled-ontology-64;karna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#gujarat -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;gujarat">
+        <rdf:type rdf:resource="&untitled-ontology-64;StatesOfIndia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#gunatrayavibhaga -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;gunatrayavibhaga">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">14</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">separation from the qualities</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#gurukulavaas -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;gurukulavaas">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <duration rdf:datatype="&xsd;string">twelve years</duration>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;drona"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#gyaanakarmasanyasa -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;gyaanakarmasanyasa">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">4</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">knowledge</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#gyaanavigyaana -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;gyaanavigyaana">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">7</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">discernment</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#halibedu -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;halibedu">
+        <rdf:type rdf:resource="&untitled-ontology-64;Places"/>
+        <has_Structure_For rdf:resource="&untitled-ontology-64;abhimanyu"/>
+        <located_In rdf:resource="&untitled-ontology-64;karnataka"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#hastinapur -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;hastinapur">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+        <current_Location rdf:resource="&untitled-ontology-64;uttarpradesh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#heron -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;heron">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#hidumba -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;hidumba">
+        <rdf:type rdf:resource="&untitled-ontology-64;Asura"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <slain_By rdf:resource="&untitled-ontology-64;bhima"/>
+        <has_Sister rdf:resource="&untitled-ontology-64;hidumbi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#hidumbi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;hidumbi">
+        <rdf:type rdf:resource="&untitled-ontology-64;Asura"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <has_Husband rdf:resource="&untitled-ontology-64;bhima"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#himachalpradesh -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;himachalpradesh">
+        <rdf:type rdf:resource="&untitled-ontology-64;StatesOfIndia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#honesty -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;honesty">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;youdhistira"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#horned -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;horned">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#indra -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;indra">
+        <rdf:type rdf:resource="&untitled-ontology-64;Deva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#indraprastha -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;indraprastha">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+        <current_Location rdf:resource="&untitled-ontology-64;delhi"/>
+        <owl:sameAs rdf:resource="&untitled-ontology-64;kandivaprastha"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#indus -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;indus">
+        <rdf:type rdf:resource="&untitled-ontology-64;Rivers"/>
+        <flows_Through rdf:resource="&untitled-ontology-64;sindhu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#instructionsfrombhishma -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;instructionsfrombhishma">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;bhishma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#intellect -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;intellect">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;vidura"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#iravan -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;iravan">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <has_Father rdf:resource="&untitled-ontology-64;arjuna"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;uloopi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#janamejaya -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;janamejaya">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <has_Father rdf:resource="&untitled-ontology-64;parikshit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#jarasandha -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;jarasandha">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <slain_By rdf:resource="&untitled-ontology-64;bhima"/>
+        <is_King_Of rdf:resource="&untitled-ontology-64;magadha"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#jayadratha -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;jayadratha">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">14</dayOfDeathInWar>
+        <slain_By rdf:resource="&untitled-ontology-64;arjuna"/>
+        <has_Wife rdf:resource="&untitled-ontology-64;dushala"/>
+        <given_Boon_By rdf:resource="&untitled-ontology-64;shiva"/>
+        <is_King_Of rdf:resource="&untitled-ontology-64;sindhu"/>
+        <given_Boon_By rdf:resource="&untitled-ontology-64;vridhakshtra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#justice -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;justice">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;youdhistira"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#kamala -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;kamala">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;lotus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#kandivaprastha -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;kandivaprastha">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#kansa -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;kansa">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <has_Sister rdf:resource="&untitled-ontology-64;devaki"/>
+        <slain_By rdf:resource="&untitled-ontology-64;krishna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#karenumati -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;karenumati">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <has_Husband rdf:resource="&untitled-ontology-64;nagula"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#karma -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;karma">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">3</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">duty</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#karmasanyasa -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;karmasanyasa">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">5</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">renunciation of action</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#karna -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;karna">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">17</dayOfDeathInWar>
+        <numberOfChildren rdf:datatype="&xsd;int">9</numberOfChildren>
+        <has_Father rdf:resource="&untitled-ontology-64;adhiratha"/>
+        <is_King_Of rdf:resource="&untitled-ontology-64;anga"/>
+        <slain_By rdf:resource="&untitled-ontology-64;arjuna"/>
+        <given_Curse_By rdf:resource="&untitled-ontology-64;bhoomadevi"/>
+        <has_Friend rdf:resource="&untitled-ontology-64;duryodhana"/>
+        <given_Boon_By rdf:resource="&untitled-ontology-64;indra"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;kunthi"/>
+        <given_Curse_By rdf:resource="&untitled-ontology-64;parshuram"/>
+        <has_Guru rdf:resource="&untitled-ontology-64;parshuram"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;radha"/>
+        <has_Father rdf:resource="&untitled-ontology-64;surya"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#karnaparva -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;karnaparva">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">8</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;warunderkarna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#karnataka -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;karnataka">
+        <rdf:type rdf:resource="&untitled-ontology-64;StatesOfIndia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#kasi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;kasi">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+        <current_Location rdf:resource="&untitled-ontology-64;uttarpradesh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#keechaka -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;keechaka">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <slain_By rdf:resource="&untitled-ontology-64;bhima"/>
+        <has_Sister rdf:resource="&untitled-ontology-64;sudeshna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#kindama -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;kindama">
+        <rdf:type rdf:resource="&untitled-ontology-64;Rishi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#krauncha -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;krauncha">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;heron"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#kripa -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;kripa">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <has_Sister rdf:resource="&untitled-ontology-64;kripi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#kripi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;kripi">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <has_Son rdf:resource="&untitled-ontology-64;ashwatthama"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#krishna -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;krishna">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;Yadava_Dynasty"/>
+        <has_Sister rdf:resource="&untitled-ontology-64;subhadra"/>
+        <incarnation_Of rdf:resource="&untitled-ontology-64;vishnu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#ksetraksetrajna -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;ksetraksetrajna">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">13</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">separation of matter and spirit</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#kunthi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;kunthi">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;Yadava_Dynasty"/>
+        <numberOfChildren rdf:datatype="&xsd;int">4</numberOfChildren>
+        <given_Boon_By rdf:resource="&untitled-ontology-64;durvasa"/>
+        <is_Princess_Of rdf:resource="&untitled-ontology-64;kuntibhoj"/>
+        <has_Husband rdf:resource="&untitled-ontology-64;pandu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#kuntibhoj -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;kuntibhoj">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#kuntibhoja -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;kuntibhoja">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <has_Daughter rdf:resource="&untitled-ontology-64;kunthi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#kurma -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;kurma">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;tortoise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#lakshman -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;lakshman">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">13</dayOfDeathInWar>
+        <slain_By rdf:resource="&untitled-ontology-64;abhimanyu"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;bhanumati"/>
+        <has_Father rdf:resource="&untitled-ontology-64;duryodhana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#lakshmi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;lakshmi">
+        <rdf:type rdf:resource="&untitled-ontology-64;Deva"/>
+        <has_Husband rdf:resource="&untitled-ontology-64;vishnu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#lotus -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;lotus">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#macefighting -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;macefighting">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;bhima"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#madhuri -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;madhuri">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">2</numberOfChildren>
+        <is_Princess_Of rdf:resource="&untitled-ontology-64;madra"/>
+        <has_Husband rdf:resource="&untitled-ontology-64;pandu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#madhyapradesh -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;madhyapradesh">
+        <rdf:type rdf:resource="&untitled-ontology-64;StatesOfIndia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#madra -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;madra">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#magadha -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;magadha">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#mahabalipuram -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;mahabalipuram">
+        <rdf:type rdf:resource="&untitled-ontology-64;Places"/>
+        <has_Structure_For rdf:resource="&untitled-ontology-64;arjuna"/>
+        <located_In rdf:resource="&untitled-ontology-64;tamilnadu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#mahaprasthanika -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;mahaprasthanika">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">17</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;finalascentofhimalayas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#makara -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;makara">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;crocodile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#mala -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;mala">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;garland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#manali -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;manali">
+        <rdf:type rdf:resource="&untitled-ontology-64;Places"/>
+        <has_Structure_For rdf:resource="&untitled-ontology-64;hidumbi"/>
+        <located_In rdf:resource="&untitled-ontology-64;himachalpradesh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#mandala -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;mandala">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;galaxy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#manipur -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;manipur">
+        <rdf:type rdf:resource="&untitled-ontology-64;StatesOfIndia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#manipura -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;manipura">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+        <current_Location rdf:resource="&untitled-ontology-64;manipur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#mathura -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;mathura">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+        <current_Location rdf:resource="&untitled-ontology-64;uttarpradesh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#matsya -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;matsya">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#mausala -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;mausala">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">16</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;destructionofyadavas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#mokshasanyasa -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;mokshasanyasa">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">18</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">renunciation</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#morals -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;morals">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;vikarna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#muchkund -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;muchkund">
+        <rdf:type rdf:resource="&untitled-ontology-64;Rishi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#nagula -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;nagula">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;Pandava"/>
+        <numberOfChildren rdf:datatype="&xsd;int">2</numberOfChildren>
+        <nameDuringAgnyatavas rdf:datatype="&xsd;string">granthika</nameDuringAgnyatavas>
+        <has_Father rdf:resource="&untitled-ontology-64;ashwinikumaras"/>
+        <has_Wife rdf:resource="&untitled-ontology-64;dhroupathi"/>
+        <has_Guru rdf:resource="&untitled-ontology-64;drona"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;madhuri"/>
+        <has_Father rdf:resource="&untitled-ontology-64;pandu"/>
+        <has_Parent rdf:resource="&untitled-ontology-64;pandu"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;sagadeva"/>
+        <has_Son rdf:resource="&untitled-ontology-64;satanika"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#needle -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;needle">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#ocean -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;ocean">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#oormi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;oormi">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;ocean"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#orissa -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;orissa">
+        <rdf:type rdf:resource="&untitled-ontology-64;StatesOfIndia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#panchala -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;panchala">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#panchali -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;panchali">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">5</numberOfChildren>
+        <has_Father rdf:resource="&untitled-ontology-64;drupada"/>
+        <has_Friend rdf:resource="&untitled-ontology-64;krishna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#pandu -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;pandu">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <numberOfChildren rdf:datatype="&xsd;int">5</numberOfChildren>
+        <has_Mother rdf:resource="&untitled-ontology-64;ambalika"/>
+        <is_Parent_Of rdf:resource="&untitled-ontology-64;arjuna"/>
+        <is_Parent_Of rdf:resource="&untitled-ontology-64;bhima"/>
+        <given_Curse_By rdf:resource="&untitled-ontology-64;kindama"/>
+        <has_Wife rdf:resource="&untitled-ontology-64;kunthi"/>
+        <is_Parent_Of rdf:resource="&untitled-ontology-64;nagula"/>
+        <is_Parent_Of rdf:resource="&untitled-ontology-64;sagadeva"/>
+        <is_Parent_Of rdf:resource="&untitled-ontology-64;youdhistira"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#parashara -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;parashara">
+        <rdf:type rdf:resource="&untitled-ontology-64;Rishi"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <has_Son rdf:resource="&untitled-ontology-64;vyasa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#parikshit -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;parikshit">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <has_Father rdf:resource="&untitled-ontology-64;abhimanyu"/>
+        <has_Son rdf:resource="&untitled-ontology-64;janamejaya"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;uttara"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#parshuram -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;parshuram">
+        <rdf:type rdf:resource="&untitled-ontology-64;Rishi"/>
+        <has_Disciple rdf:resource="&untitled-ontology-64;bhishma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#peacemission -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;peacemission">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;krishna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#postwar -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;postwar">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;dhritarashtra"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;gandhari"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;kunthi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#prativindhya -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;prativindhya">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">18</dayOfDeathInWar>
+        <slain_By rdf:resource="&untitled-ontology-64;ashwatthama"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;dhroupathi"/>
+        <has_Father rdf:resource="&untitled-ontology-64;youdhistira"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#puri -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;puri">
+        <rdf:type rdf:resource="&untitled-ontology-64;Places"/>
+        <located_In rdf:resource="&untitled-ontology-64;orissa"/>
+        <has_Structure_For rdf:resource="&untitled-ontology-64;subhadra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#purusottama -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;purusottama">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">15</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">attaining the Supreme</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#radha -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;radha">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">2</numberOfChildren>
+        <has_Husband rdf:resource="&untitled-ontology-64;adhiratha"/>
+        <has_Son rdf:resource="&untitled-ontology-64;karna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#rajavidyarajaguhya -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;rajavidyarajaguhya">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">9</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">kingly knowledge and kingly mystery</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#returntosvarga -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;returntosvarga">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;youdhistira"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#rohini -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;rohini">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">2</numberOfChildren>
+        <has_Son rdf:resource="&untitled-ontology-64;balarama"/>
+        <has_Daughter rdf:resource="&untitled-ontology-64;subhadra"/>
+        <has_Husband rdf:resource="&untitled-ontology-64;vasudeva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#rukmini -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;rukmini">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">11</numberOfChildren>
+        <has_Husband rdf:resource="&untitled-ontology-64;krishna"/>
+        <incarnation_Of rdf:resource="&untitled-ontology-64;lakshmi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#sabha -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;sabha">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">2</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;dicegame"/>
+        <describes rdf:resource="&untitled-ontology-64;exileofarjuna"/>
+        <describes rdf:resource="&untitled-ontology-64;splitofkingdom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#sagadeva -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;sagadeva">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;Pandava"/>
+        <numberOfChildren rdf:datatype="&xsd;int">2</numberOfChildren>
+        <nameDuringAgnyatavas rdf:datatype="&xsd;string">tantipala</nameDuringAgnyatavas>
+        <has_Father rdf:resource="&untitled-ontology-64;ashwinikumaras"/>
+        <has_Wife rdf:resource="&untitled-ontology-64;dhroupathi"/>
+        <has_Guru rdf:resource="&untitled-ontology-64;drona"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;madhuri"/>
+        <has_Father rdf:resource="&untitled-ontology-64;pandu"/>
+        <has_Parent rdf:resource="&untitled-ontology-64;pandu"/>
+        <has_Son rdf:resource="&untitled-ontology-64;srutasena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#sankhya -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;sankhya">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">2</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">entire summary of gita</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#satanika -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;satanika">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">18</dayOfDeathInWar>
+        <slain_By rdf:resource="&untitled-ontology-64;ashwatthama"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;dhroupathi"/>
+        <has_Father rdf:resource="&untitled-ontology-64;nagula"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#satyavati -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;satyavati">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">3</numberOfChildren>
+        <has_Son rdf:resource="&untitled-ontology-64;chitrangada"/>
+        <given_Boon_By rdf:resource="&untitled-ontology-64;parashara"/>
+        <has_Husband rdf:resource="&untitled-ontology-64;shantanu"/>
+        <has_Son rdf:resource="&untitled-ontology-64;vichitravirya"/>
+        <has_Son rdf:resource="&untitled-ontology-64;vyasa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#sauptika -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;sauptika">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">10</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;deathofupapandavas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#shakata -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;shakata">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#shakuni -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;shakuni">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">18</dayOfDeathInWar>
+        <numberOfChildren rdf:datatype="&xsd;int">2</numberOfChildren>
+        <is_King_Of rdf:resource="&untitled-ontology-64;gandhar"/>
+        <has_Sister rdf:resource="&untitled-ontology-64;gandhari"/>
+        <slain_By rdf:resource="&untitled-ontology-64;sagadeva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#shalya -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;shalya">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">18</dayOfDeathInWar>
+        <has_Sister rdf:resource="&untitled-ontology-64;madhuri"/>
+        <is_King_Of rdf:resource="&untitled-ontology-64;madra"/>
+        <slain_By rdf:resource="&untitled-ontology-64;youdhistira"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#shalyaparva -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;shalyaparva">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">9</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;warundershalya"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#shantanu -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;shantanu">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <numberOfChildren rdf:datatype="&xsd;int">10</numberOfChildren>
+        <has_Son rdf:resource="&untitled-ontology-64;bhishma"/>
+        <has_Son rdf:resource="&untitled-ontology-64;chitrangada"/>
+        <has_Wife rdf:resource="&untitled-ontology-64;ganga"/>
+        <has_Wife rdf:resource="&untitled-ontology-64;satyavati"/>
+        <has_Son rdf:resource="&untitled-ontology-64;vichitravirya"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#shanti -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;shanti">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">12</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;crowning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#shikhandi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;shikhandi">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">18</dayOfDeathInWar>
+        <slain_By rdf:resource="&untitled-ontology-64;ashwatthama"/>
+        <has_Sister rdf:resource="&untitled-ontology-64;panchali"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#shiva -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;shiva">
+        <rdf:type rdf:resource="&untitled-ontology-64;Deva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#shurasena -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;shurasena">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;Yadava_Dynasty"/>
+        <numberOfChildren rdf:datatype="&xsd;int">2</numberOfChildren>
+        <has_Daughter rdf:resource="&untitled-ontology-64;kunthi"/>
+        <is_King_Of rdf:resource="&untitled-ontology-64;mathura"/>
+        <has_Son rdf:resource="&untitled-ontology-64;vasudeva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#sindhu -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;sindhu">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#sishupala -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;sishupala">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <is_King_Of rdf:resource="&untitled-ontology-64;chedi"/>
+        <slain_By rdf:resource="&untitled-ontology-64;krishna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#soochi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;soochi">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;needle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#splitofkingdom -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;splitofkingdom">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;youdhistira"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#sraddatrayavibhaga -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;sraddatrayavibhaga">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">17</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">the three divisions of faith</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#sringataka -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;sringataka">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;horned"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#srutakarma -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;srutakarma">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">18</dayOfDeathInWar>
+        <has_Mother rdf:resource="&untitled-ontology-64;panchali"/>
+        <has_Father rdf:resource="&untitled-ontology-64;sagadeva"/>
+        <owl:sameAs rdf:resource="&untitled-ontology-64;srutasena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#srutakirti -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;srutakirti">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">18</dayOfDeathInWar>
+        <has_Father rdf:resource="&untitled-ontology-64;arjuna"/>
+        <slain_By rdf:resource="&untitled-ontology-64;ashwatthama"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;dhroupathi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#srutasena -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;srutasena">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">18</dayOfDeathInWar>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#stri -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;stri">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">11</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;postwar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#subhadra -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;subhadra">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;Yadava_Dynasty"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <has_Husband rdf:resource="&untitled-ontology-64;arjuna"/>
+        <incarnation_Of rdf:resource="&untitled-ontology-64;yogmaya"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#sudeshna -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;sudeshna">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">4</numberOfChildren>
+        <is_Queen_Of rdf:resource="&untitled-ontology-64;matsya"/>
+        <has_Daughter rdf:resource="&untitled-ontology-64;uttara"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#surya -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;surya">
+        <rdf:type rdf:resource="&untitled-ontology-64;Deva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#susharma -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;susharma">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#sutasoma -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;sutasoma">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">18</dayOfDeathInWar>
+        <slain_By rdf:resource="&untitled-ontology-64;ashwatthama"/>
+        <has_Father rdf:resource="&untitled-ontology-64;bhima"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;dhroupathi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#svargarohana -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;svargarohana">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">18</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;returntosvarga"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#swayamvar -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;swayamvar">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;arjuna"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;dhroupathi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#tamilnadu -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;tamilnadu">
+        <rdf:type rdf:resource="&untitled-ontology-64;StatesOfIndia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#tortoise -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;tortoise">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#trident -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;trident">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#trigarta -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;trigarta">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kingdom"/>
+        <ruled_By rdf:resource="&untitled-ontology-64;susharma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#trishula -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;trishula">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;trident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#udyoga -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;udyoga">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">5</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;peacemission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#uloopi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;uloopi">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <has_Husband rdf:resource="&untitled-ontology-64;arjuna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#urvashi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;urvashi">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#uttar -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;uttar">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">1</dayOfDeathInWar>
+        <is_Prince_Of rdf:resource="&untitled-ontology-64;matsya"/>
+        <slain_By rdf:resource="&untitled-ontology-64;shalya"/>
+        <has_Sister rdf:resource="&untitled-ontology-64;uttara"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#uttara -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;uttara">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <has_Guru rdf:resource="&untitled-ontology-64;arjuna"/>
+        <is_Princess_Of rdf:resource="&untitled-ontology-64;matsya"/>
+        <has_Son rdf:resource="&untitled-ontology-64;parikshit"/>
+        <has_Father rdf:resource="&untitled-ontology-64;virata"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#uttarpradesh -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;uttarpradesh">
+        <rdf:type rdf:resource="&untitled-ontology-64;StatesOfIndia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#vajra -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;vajra">
+        <rdf:type rdf:resource="&untitled-ontology-64;Vyuha"/>
+        <formation_Of rdf:resource="&untitled-ontology-64;diamond"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#vana -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;vana">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">3</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;exile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#varnavatandexile -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;varnavatandexile">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;bhima"/>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;kunthi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#vasudeva -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;vasudeva">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;Yadava_Dynasty"/>
+        <numberOfChildren rdf:datatype="&xsd;int">9</numberOfChildren>
+        <has_Son rdf:resource="&untitled-ontology-64;krishna"/>
+        <has_Sister rdf:resource="&untitled-ontology-64;kunthi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#vayu -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;vayu">
+        <rdf:type rdf:resource="&untitled-ontology-64;Deva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#vibhutivistara -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;vibhutivistara">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">10</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">heavenly perfections</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#vichitravirya -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;vichitravirya">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;satyavati"/>
+        <has_Father rdf:resource="&untitled-ontology-64;shantanu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#vidura -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;vidura">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;dhritarashtra"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;pandu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#vijaya -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;vijaya">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <has_Husband rdf:resource="&untitled-ontology-64;sagadeva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#vikarna -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;vikarna">
+        <rdf:type rdf:resource="&untitled-ontology-64;Kaurava"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">14</dayOfDeathInWar>
+        <slain_By rdf:resource="&untitled-ontology-64;bhima"/>
+        <has_Guru rdf:resource="&untitled-ontology-64;drona"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;duryodhana"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;gandhari"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#virata -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;virata">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <dayOfDeathInWar rdf:datatype="&xsd;int">15</dayOfDeathInWar>
+        <numberOfChildren rdf:datatype="&xsd;int">4</numberOfChildren>
+        <slain_By rdf:resource="&untitled-ontology-64;drona"/>
+        <has_Wife rdf:resource="&untitled-ontology-64;sudeshna"/>
+        <has_Daughter rdf:resource="&untitled-ontology-64;uttara"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#virataparva -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;virataparva">
+        <rdf:type rdf:resource="&untitled-ontology-64;Parvas"/>
+        <booknumber rdf:datatype="&xsd;int">4</booknumber>
+        <describes rdf:resource="&untitled-ontology-64;agyatavas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#vishnu -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;vishnu">
+        <rdf:type rdf:resource="&untitled-ontology-64;Deva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#visvarupadarsana -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;visvarupadarsana">
+        <rdf:type rdf:resource="&untitled-ontology-64;Chapters"/>
+        <chapterNumber rdf:datatype="&xsd;int">11</chapterNumber>
+        <talksAbout rdf:datatype="&xsd;string">vishvaroopa dharshan given by krishna</talksAbout>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#vridhakshtra -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;vridhakshtra">
+        <rdf:type rdf:resource="&untitled-ontology-64;Rishi"/>
+        <numberOfChildren rdf:datatype="&xsd;int">1</numberOfChildren>
+        <has_Son rdf:resource="&untitled-ontology-64;jayadratha"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#vrindavan -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;vrindavan">
+        <rdf:type rdf:resource="&untitled-ontology-64;Places"/>
+        <has_Structure_For rdf:resource="&untitled-ontology-64;balarama"/>
+        <located_In rdf:resource="&untitled-ontology-64;uttarpradesh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#vrishali -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;vrishali">
+        <rdf:type rdf:resource="&untitled-ontology-64;Woman"/>
+        <numberOfChildren rdf:datatype="&xsd;int">9</numberOfChildren>
+        <has_Husband rdf:resource="&untitled-ontology-64;karna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#vyasa -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;vyasa">
+        <rdf:type rdf:resource="&untitled-ontology-64;Rishi"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;satyavati"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#warunderbhishma -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;warunderbhishma">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <duration rdf:datatype="&xsd;string">ten days</duration>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;bhishma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#warunderdrona -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;warunderdrona">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <duration rdf:datatype="&xsd;string">five days</duration>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;drona"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#warunderkarna -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;warunderkarna">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <duration rdf:datatype="&xsd;string">two days</duration>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;karna"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#warundershalya -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;warundershalya">
+        <rdf:type rdf:resource="&untitled-ontology-64;Events"/>
+        <duration rdf:datatype="&xsd;string">one day</duration>
+        <mainly_Involved rdf:resource="&untitled-ontology-64;shalya"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#wheel -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;wheel">
+        <rdf:type rdf:resource="&untitled-ontology-64;Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#wisdom -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;wisdom">
+        <rdf:type rdf:resource="&untitled-ontology-64;Traits"/>
+        <characteristic_Of rdf:resource="&untitled-ontology-64;sagadeva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#yama -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;yama">
+        <rdf:type rdf:resource="&untitled-ontology-64;Deva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#yogmaya -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;yogmaya">
+        <rdf:type rdf:resource="&untitled-ontology-64;Deva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vinu/ontologies/2014/3/untitled-ontology-64#youdhistira -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-64;youdhistira">
+        <rdf:type rdf:resource="&untitled-ontology-64;Man"/>
+        <rdf:type rdf:resource="&untitled-ontology-64;Pandava"/>
+        <numberOfChildren rdf:datatype="&xsd;int">2</numberOfChildren>
+        <numberOfSenasInWar rdf:datatype="&xsd;int">7</numberOfSenasInWar>
+        <numberOfSurvivorsAfterWar rdf:datatype="&xsd;int">8</numberOfSurvivorsAfterWar>
+        <nameDuringAgnyatavas rdf:datatype="&xsd;string">kanka</nameDuringAgnyatavas>
+        <has_Brother rdf:resource="&untitled-ontology-64;bhima"/>
+        <has_Wife rdf:resource="&untitled-ontology-64;dhroupathi"/>
+        <has_Guru rdf:resource="&untitled-ontology-64;drona"/>
+        <is_King_Of rdf:resource="&untitled-ontology-64;indraprastha"/>
+        <has_Mother rdf:resource="&untitled-ontology-64;kunthi"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;nagula"/>
+        <has_Parent rdf:resource="&untitled-ontology-64;pandu"/>
+        <has_Father rdf:resource="&untitled-ontology-64;pandu"/>
+        <has_Son rdf:resource="&untitled-ontology-64;prativindhya"/>
+        <has_Brother rdf:resource="&untitled-ontology-64;sagadeva"/>
+        <has_Father rdf:resource="&untitled-ontology-64;yama"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
